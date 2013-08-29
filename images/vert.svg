@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" 
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="20%" cy="4" r="4" fill="rgb(0, 150, 100)" stroke="green" stroke-width="1">
+        <animate attributeName="cy" from="-20" to="20" dur="1s" begin="0s; second1.end" id="first1" fill="freeze" />
+        <animate attributeName="cy" from="20" to="-20" dur="1s" begin="first1.end+1s" id="second1" />
+    </circle>
+    <circle cx="35%" cy="4" r="4" fill="rgb(0, 150, 100)" stroke="green" stroke-width="1">
+        <animate attributeName="cy" from="-20" to="20" dur="1.2s" begin="0s; second2.end" id="first2" fill="freeze" />
+        <animate attributeName="cy" from="20" to="-20" dur="0.8s" begin="first2.end+1s" id="second2" />
+    </circle>
+    <circle cx="50%" cy="4" r="4" fill="rgb(0, 150, 100)" stroke="green" stroke-width="1">
+        <animate attributeName="cy" from="-20" to="20" dur="1.4s" begin="0s; second3.end" id="first3" fill="freeze" />
+        <animate attributeName="cy" from="20" to="-20" dur="0.6s" begin="first3.end+1s" id="second3" />
+    </circle>
+    <circle cx="65%" cy="4" r="4" fill="rgb(0, 150, 100)" stroke="green" stroke-width="1">
+        <animate attributeName="cy" from="-20" to="20" dur="1.6s" begin="0s; second4.end" id="first4" fill="freeze" />
+        <animate attributeName="cy" from="20" to="-20" dur="0.4s" begin="first4.end+1s" id="second4" />
+    </circle>
+    <circle cx="80%" cy="4" r="4" fill="rgb(0, 150, 100)" stroke="green" stroke-width="1">
+        <animate attributeName="cy" from="-20" to="20" dur="1.8s" begin="0s; second5.end" id="first5" fill="freeze" />
+        <animate attributeName="cy" from="20" to="-20" dur="0.2s" begin="first5.end+1s" id="second5" />
+    </circle>
+</svg>

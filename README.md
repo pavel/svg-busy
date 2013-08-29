@@ -1,4 +1,4 @@
-SVG progress viewer inspired by Microsoft Windows 8.
+SVG busy indicator.
 
 ## Internet explorer support
 So your awesome IE doesn't support SMIL.<br>
