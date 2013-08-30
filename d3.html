@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            svg {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+            }
+        </style>
+    </head>
+    <body>
+        <svg>
+            <circle cx="-10%" cy="10" r="2" fill="green" />
+            <circle cx="-10%" cy="10" r="2" fill="green" />
+            <circle cx="-10%" cy="10" r="2" fill="green" />
+            <circle cx="-10%" cy="10" r="2" fill="green" />
+            <circle cx="-10%" cy="10" r="2" fill="green" />
+        </svg>
+        <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script>
+            var timing = [
+                [600, 2000, 1000],
+                [800, 2000, 800],
+                [1000, 2000, 600],
+                [1200, 2000, 400],
+                [1400, 2000, 200]
+            ];
+            function chain(el, d) {
+                var sel = d3.select(el).attr('cx', '-10%');
+                sel = sel.transition().ease('linear').duration(d[0]).attr('cx', '45%');
+                sel = sel.transition().duration(d[1]).attr('cx', '55%');
+                sel = sel.transition().duration(d[2]).attr('cx', '120%');
+                sel.each('end', function (d) { chain(this, d); });
+            }
+            d3.selectAll('circle').data(timing).each(function (d) {
+                chain(this, d);
+            });
+        </script>
+    </body>
+</html>
