@@ -1,6 +1,6 @@
-SVG busy indicator.
+# SVG busy indicator.
 
-## Internet explorer support
+#### Internet explorer support
 So your awesome IE doesn't support SMIL.<br>
 Not a problem! Refer to http://leunen.me/fakesmile/.
 If you're too lazy to read the docs, just add:
